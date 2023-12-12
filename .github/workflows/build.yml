@@ -93,3 +93,5 @@ jobs:
           .github/badges/branches.svg
         commit-msg:  Update Jacoco Badge
         github-token: ${{ secrets.GITHUB_TOKEN }}
+        coverage-label: coverage (overall)
+        branches-label: branches (overall)
