@@ -93,7 +93,7 @@ jobs:
         uses: test-room-7/action-update-file@v1
         with:
           file-path: |
-            .github/badges/jacoco.svg
-            .github/badges/branches.svg
+            .doc/img/coverage/code-coverage.svg
+            .doc/img/coverage/branches-coverage.svg
           commit-msg:  Update Jacoco Badge
           github-token: ${{ secrets.GITHUB_TOKEN }}
