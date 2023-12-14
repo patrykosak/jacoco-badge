@@ -81,7 +81,7 @@ jobs:
           jacoco-csv-file: target/site/jacoco/jacoco.csv
           coverage-badge-filename: code-coverage.svg
           branches-badge-filename: branches-coverage.svg
-          badges-directory: doc/img/coverage
+#          badges-directory: doc/img/coverage
 
       #    - name: Log coverage percentage
       #      run: |
@@ -93,7 +93,7 @@ jobs:
         uses: test-room-7/action-update-file@v1
         with:
           file-path: |
-            .doc/img/coverage/code-coverage.svg
-            .doc/img/coverage/branches-coverage.svg
+            .github/badges/jacoco.svg
+            .github/badges/branches.svg
           commit-msg:  Update Jacoco Badge
           github-token: ${{ secrets.GITHUB_TOKEN }}
