@@ -95,10 +95,42 @@ and branches coverage badges storing them in the default directory,
 be run manually (the workflow_dispatch event). Here are the badges
 it produces:
 
+
+
+
 ![coverage](.github/badges/jacoco.svg)
 ![branches coverage](.github/badges/branches.svg)
 
-The above was inserted into this README with the following
+
+
+
+| Module                                      | Coverage | Branches |
+|:--------------------------------------------| :--- | :--- | 
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+| Overall                                     | ![coverage](.github/badges/jacoco.svg) | ![branches coverage](.github/badges/branches.svg) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The above was inserted i nto this README with the following
 markdown:
 
 ```markdown

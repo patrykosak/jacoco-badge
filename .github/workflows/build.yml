@@ -75,17 +75,23 @@ jobs:
       run: mvn -B package
 
     - name: Generate Jacoco Badge
+      if: github.ref == 'refs/heads/main'
       id: jacoco
       uses: cicirello/jacoco-badge-generator@v2
       with:
         generate-branches-badge: true
+        jacoco-csv-file: target/site/jacoco/jacoco.csv
+        coverage-badge-filename: code-coverage.svg
+        branches-badge-filename: branches-coverage.svg
+        badges-directory: doc/img/coverage
 
-    - name: Log coverage percentage
-      run: |
-        echo "coverage = ${{ steps.jacoco.outputs.coverage }}"
-        echo "branches = ${{ steps.jacoco.outputs.branches }}"
+#    - name: Log coverage percentage
+#      run: |
+#        echo "coverage = ${{ steps.jacoco.outputs.coverage }}"
+#        echo "branches = ${{ steps.jacoco.outputs.branches }}"
 
     - name: Update Jacoco Badge
+      if: github.ref == 'refs/heads/main'
       uses: test-room-7/action-update-file@v1
       with:
         file-path: |
